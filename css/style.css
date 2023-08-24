@@ -1,0 +1,60 @@
+/* Style for the main navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Style for the logo/link */
+.Logo {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style for the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the right-aligned content */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the navigation links list */
+.right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style for the navigation list items */
+.List {
+  margin: 0 15px;
+}
+
+/* Style for the navigation links */
+.Link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+.Link:hover {
+  text-decoration: underline;
+}
+
+/* Style for the active navigation link */
+.List.active .Link {
+  font-weight: normal;
+  text-decoration: underline;
+}

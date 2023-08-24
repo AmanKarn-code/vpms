@@ -1,0 +1,130 @@
+/* Style for the main container */
+/* Style for the main navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Style for the logo/link */
+.Logo {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style for the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the right-aligned content */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the navigation links list */
+.right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style for the navigation list items */
+.List {
+  margin: 0 15px;
+}
+
+/* Style for the navigation links */
+.Link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+.Link:hover {
+  text-decoration: underline;
+}
+
+/* Style for the active navigation link */
+.List.active .Link {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Style for the center content */
+.center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the logo link */
+.center a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style for the form container */
+.form {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs */
+.form input[type="text"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style for form labels */
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style for the forgot password link */
+.forgotpassword a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style for the submit button */
+.form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style for the home link */
+.form .home-link a {
+  text-decoration: none;
+  color: #333;
+}
