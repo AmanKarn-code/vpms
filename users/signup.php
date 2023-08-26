@@ -102,18 +102,28 @@ if (isset($_POST['submit'])) {
           <label>First Name</label>
           <input type="text" name="firstname" placeholder="Your First Name..." required="true" class="form-control">
 
+            <section>
 
-          <label>Mobile Number</label>
-          <input type="text" name="mobilenumber" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" required="true" class="form-control">
+              <label>Mobile Number</label>
+              <section style="display: flex; align-items: center;">
+                <input type="text" value="+91" readonly style="width: 15%;">
+                <input type="text" name="mobilenumber" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" required="true" class="form-control">
+              </section>
+            </section>
 
           <label>Email address</label>
-          <input type="email" name="email" placeholder="Email address" required="true" class="form-control">
+          <input type="email" name="email" placeholder="Email address" required="true" id="email" class="form-control" >
 
           <label>Password</label>
-          <input type="password" name="password" placeholder="Enter password" required="true" id="password" class="form-control">
+          <section style="display: flex; align-items: center; background-color: white; border:1px solid #ccc; border-radius: 3px;">
+
+            <input type="password" name="password" placeholder="Enter password" required="true" id="password" class="form-control" style="border: none; margin: 0;">
+            <p id="showBtn" style="background-color: transparent; border: none; padding-right: 3px; cursor: pointer;" onclick="showPass()">show</p>
+          </section>
 
           <label>Repeat Password</label>
           <input type="password" name="repeatpassword" id="repeatpassword" placeholder="Enter repeat password" required="true" class="form-control">
+          <p id="showBtn" style="background-color: transparent; border: none; padding-right: 3px; cursor: pointer;" onclick="showPass()">show</p>
           <button id="submitbtn" type="submit" name="submit" class="btn btn btn-primary" style="padding: 6px ;background-color: #b1ebd8 ;border:0.5px solid grey;border-radius:5px;">REGISTER</button>
           <section style="display:flex; align-items:center; justify-content:space-around;">
             
@@ -137,6 +147,23 @@ if (isset($_POST['submit'])) {
   </footer>
   </div>
 
+  <script>
+    let showBtn=document.getElementById("showBtn");
+    let pass=document.getElementById("password");
+    let email=document.getElementById("email");
+    function showPass(){
+      if(showBtn.innerHTML=="show"){
+        showBtn.innerHTML="Hide";
+        pass.type="text"
+      }
+      else{
+        showBtn.innerHTML="show"
+        pass.type="password"
+      }
+    }
+    email.toLowercase;
+
+  </script>
 </body>
 
 </html>
